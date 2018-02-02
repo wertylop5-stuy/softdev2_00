@@ -17,13 +17,17 @@ function init() {
 	cvs.addEventListener("click", painter.paint);
 }
 
-function Painter() {
+function Painter(context) {
 	Painter.shape = "Circle";
+	Painter.ctx = context;
 }
 
 Painter.prototype.toggle = function() {
 	//this.shape = 
 };
+
+Painter.prototype.clear = function() {
+}
 
 init();
 
